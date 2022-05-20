@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Лабораторная работа 1</title>
   <link rel="stylesheet" href="/styles/styles.css">
-  <script type="text/javascript" src="/scripts/scriptsLab1.js"></script>
+  <script type="text/javascript" src="/scripts/scriptLab1.js"></script>
 </head>
 <body>
 <h1>Л/р №1</h1>
@@ -22,7 +22,7 @@
       <td colspan="2"> <input type="button" value="Сделать расчет" onclick="rasschet();"> </td>
     </tr>
     <tr>
-      <td> <a href="index.php">На главную</a> </td>
+      <td> <a href="/index.php">На главную</a> </td>
     </tr>
   </table>
 </form>
