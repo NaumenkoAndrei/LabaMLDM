@@ -16,7 +16,7 @@ function check(a, b, relation)
     error_message = "Необходимо минимум 2 пары элемннтов в множестве B\n";
   }
   else if (relation.length <= 1) {
-    error_message = "Необходимо минимум дву пары элементов в отношении";
+    error_message = "Необходимо минимум две пары элементов в отношении";
   }
   if(error_message) {
     return false;
@@ -52,6 +52,7 @@ function rasschet() {
   relation = converting(relation.value);
   let full_result = "";
   if (check(setA, setB, relation) == false) {
+    alert(error_message);
   }
   else {
     var matrix = [];
@@ -134,4 +135,5 @@ function rasschet() {
     }
     document.getElementById('outResult').innerText = "\n" + full_result;
   }
+
 }

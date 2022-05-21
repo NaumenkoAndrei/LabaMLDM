@@ -14,6 +14,7 @@
   <input type = "text" name = "end"  value = '<?= $_POST[end]?>'><br>
   <input type="submit" value="Рассчитать">
   <p>
+    <a href="/index.php">На главную</a>
     Пример ввода: <br>
     0 20 10 6<br>
     20 0 5 7<br>

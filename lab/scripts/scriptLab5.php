@@ -18,14 +18,16 @@ function finderror($mass) {
       return false;
     }
     for ($j = 0; $j < count($mass); $j++) {
-      if ($i == $j and $mass[$i][$j] != 0) {
-        $_SESSION['error_text'] = "На главной диагонали должны быть нули";
+      if (count($mass) != count($mass[$j])) {
+        $_SESSION['error_message'] = "Матрица должна быть квадратной";
         return false;
       }
     }
-    for ($i = 0; $i < count($mass); $i++) {
-      if (count($mass) != count($mass[$i])) {
-        $_SESSION['error_message'] = "Матрица должна быть квадратной";
+    for ($j = 0; $j < count($mass); $j++) {
+      if ($mass[$i][$j] == 0 || $mass[$i][$j] == 1) {
+
+      }else {
+        $_SESSION['error_message'] = "Матрица должна состоять из нулей и единиц";
         return false;
       }
     }

@@ -14,9 +14,9 @@
   <input type="submit" value="Рассчитать"><br>
   <a href="/index.php">На главную</a>
   <p>Пример ввода:<br>
-    0 5 5<br>
-    2 0 1<br>
-    0 6 0<br>
+    0 1 1<br>
+    1 1 1<br>
+    0 0 1<br>
   </p>
 </form>
 <?php
